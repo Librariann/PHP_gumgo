@@ -13,8 +13,6 @@
     // }
 
     $admin_id = $_POST['admin_id'];
-   
-
     $admin_pw = $_POST['admin_pw'];
   
 

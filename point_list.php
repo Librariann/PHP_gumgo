@@ -25,7 +25,7 @@ session_start();
         </ul>
     </div>
     <div class="point_input">
-        <input type="button" value="점수 입력하러가기">
+        <a href="./point_input.php"><input type="button" value="점수 입력하러가기"></a>
     </div>
 
 

@@ -41,6 +41,8 @@
                 echo "어서오세요".$_SESSION["admin_id"]."님";
                 echo "<br/>";
                 echo "<a href='./logout.php'>로그아웃</a>";
+                echo "<br/>";
+                echo "<a href='./point_list.php'>점수표 보러가기</a>";
             }else{
             ?>
             <h1>로그인이 필요합니다!! 관리자 로그인부터 해주세요</h1>
