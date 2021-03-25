@@ -1,26 +1,16 @@
-<?php
+<?
 
     /**
-     * name : index.php
-     * author : ParkSeongHyun
-     * Date : 2020-08-02
+     * 
+     * 점수메인 페이지
+     * 
+     * @name : index.php
+     * @author : ParkSeongHyun
+     * @since : 2020-08-02
      */
 
     session_start();
-    $host = 'localhost';
-    $user = 'root';
-    $password = 'tjdgus123';
-    $DBname = 'mahjong';
-    $mysqli = new mysqli($host, $user, $password, $DBname);
-
-    //DB연결 확인
-    // if($mysqli){
-    //     echo "DB연결 성공!";
-    //     echo "<br />";
-    // }else{
-    //     echo "DB연결 실패..";
-    //     echo "<br />";
-    // }
+    <? include "./dbconn.php" ?>
 
 ?>
 
@@ -34,7 +24,7 @@
 <body>
 
     
-    <form action="login_check.php" method="POST">
+    <form action="/PHP_gumgo/login/login_check.php" method="POST">
         <!-- 관리자 로그인 -->
             <?php 
               if($_SESSION["admin_id"] && $_SESSION["admin_pw"]){
